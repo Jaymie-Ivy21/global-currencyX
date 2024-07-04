@@ -97,11 +97,6 @@
   font-weight: 600;
 }
 
-.wrapper .btn:hover{
-  background-color: rgb(76, 18, 117);
-  color: #dbdce3;
-}
-
 .wrapper .register-link{
   font-size: 14.5px;
   text-align: center;

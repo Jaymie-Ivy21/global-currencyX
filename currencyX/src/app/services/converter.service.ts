@@ -6,9 +6,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class ConverterService {
 
-  baseCurrency: string = 'USD';
-
-  exchangeUrl = `https://api.exchangerate-api.com/v4/latest/${this.baseCurrency}`;
+  exchangeUrl = 'https://api.exchangerate-api.com/v4/latest/USD';
 
   constructor(private http: HttpClient) { }
 
