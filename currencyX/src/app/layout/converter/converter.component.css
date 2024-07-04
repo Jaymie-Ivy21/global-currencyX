@@ -1,0 +1,20 @@
+.card-custom {
+  max-width: 400px;
+  margin: auto;
+}
+
+.form-control-custom {
+  width: 100%;
+  max-width: 300px;
+  margin: auto;
+}
+
+.btn-custom {
+  width: 100%;
+  max-width: 300px;
+  margin: auto;
+}
+
+.card {
+  background: #060c0e;
+  }

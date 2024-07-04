@@ -1,0 +1,31 @@
+<app-navbar></app-navbar>
+
+  <div class="container mt-5 w-50">
+    <div class="card">
+      <div class="card-body py-4">
+        <h4 class="text-center mb-4">Select the currency you want to convert</h4>
+        <div class="form-group py-4 text-center">
+          <label for="baseCurrency" class="fs-4">From</label>
+          <select class="form-control w-50 mx-auto" id="baseCurrency" [(ngModel)]="baseCurrency">
+            <option *ngFor="let currency of currencies" [value]="currency">{{currency}}</option>
+          </select>
+        </div>
+        <div class="form-group py-4 text-center">
+          <label for="quoteCurrency" class="fs-4">To</label>
+          <select class="form-control w-50 mx-auto" id="quoteCurrency" [(ngModel)]="quoteCurrency">
+            <option *ngFor="let currency of currencies" [value]="currency">{{currency}}</option>
+          </select>
+        </div>
+        <div class="form-group py-4 text-center">
+          <label for="amount" class="fs-4">Amount</label>
+          <input type="number" class="form-control w-50 mx-auto" id="amount" [(ngModel)]="amount">
+        </div>
+        <div class="form-group d-flex justify-content-center mt-4">
+          <button class="btn btn-primary" (click)="convert()">Convert</button>
+        </div>
+        <div class="mt-4" *ngIf="result !== null">
+          <h4 class="text-center">Converted Amount: {{result}}</h4>
+        </div>
+      </div>
+    </div>
+  </div>
