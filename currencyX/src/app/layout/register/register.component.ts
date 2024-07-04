@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { passwordMatchValidator } from 'src/app/services/password-match-directive';
+import { passwordMatchValidator } from 'src/app/services/password-match';
 import { AuthService } from 'src/app/auth/auth.service';
 import { User } from 'src/app/auth/auth';
 import { Router } from '@angular/router';
