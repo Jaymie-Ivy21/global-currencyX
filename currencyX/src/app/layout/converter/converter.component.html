@@ -21,7 +21,7 @@
           <input type="number" class="form-control w-50 mx-auto" id="amount" [(ngModel)]="amount">
         </div>
         <div class="form-group d-flex justify-content-center mt-4">
-          <button class="btn btn-primary" (click)="convert()">Convert</button>
+          <button class="btn" (click)="convert()">Convert</button>
         </div>
         <div class="mt-4" *ngIf="result !== null">
           <h4 class="text-center">Converted Amount: {{result}}</h4>

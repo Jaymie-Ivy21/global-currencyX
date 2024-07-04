@@ -14,10 +14,10 @@ export class AuthService {
   constructor(private http: HttpClient) { }
 
   registerUser(userDetails: User): Observable<User> {
-    return this.http.post<User>(`${this.apiUrl}/users`, userDetails);
+    return this.http.post<User>(`${this.apiUrl}`, userDetails);
   }
 
   getUserByEmail(email: string): Observable<User[]> {
-    return this.http.get<User[]>(`${this.apiUrl}/users?email=${email}`);
+    return this.http.get<User[]>(`${this.apiUrl}?email=${email}`);
   }
 }

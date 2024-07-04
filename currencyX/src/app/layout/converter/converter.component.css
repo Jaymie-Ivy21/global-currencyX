@@ -16,5 +16,10 @@
 }
 
 .card {
-  background: #060c0e;
+  background: #e1e6e8;
   }
+
+.btn{
+  background: #333;
+  color: #fff;
+}

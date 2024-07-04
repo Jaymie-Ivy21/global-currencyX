@@ -1,5 +1,9 @@
 {
   "users": [
-    
+    {
+      "id": "b767",
+      "email": "oluwajamie@gmail.com",
+      "password": "james19"
+    }
   ]
 }
